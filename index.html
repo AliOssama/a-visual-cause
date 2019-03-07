@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="d3.js">
+    </script>
+    <title>Reading in Data</title>
+  </head>
+  <body>
+    <h1>Reading from the CSV File</h1>
+   <svg id="svg1">
+    <div class="legend">
+      <div> <p class="color-name"><span class="key-dot blue"></span>Males percentage</p> </div>
+      <div> <p class="color-name"><span class="key-dot red"></span>Females percentage</p> </div>
+      <div> <p class="color-name"><span class="key-dot black"></span>Other</p> </div>
+    </div>
+  </svg>
+
+  <svg id="svg2">
+   <div class="legend">
+     <div> <p class="color-name"><span class="key-dot blue"></span>United States</p> </div>
+     <div> <p class="color-name"><span class="key-dot red"></span>UK</p> </div>
+     <div> <p class="color-name"><span class="key-dot black"></span>Other</p> </div>
+   </div>
+ </svg>
+
+ <svg id="svg3">
+  <div class="legend">
+    <div> <p class="color-name"><span class="key-dot blue"></span>No</p> </div>
+    <div> <p class="color-name"><span class="key-dot red"></span>Maybe</p> </div>
+    <div> <p class="color-name"><span class="key-dot black"></span>Other</p> </div>
+  </div>
+</svg>
+
+    <style>
+      .color-name {
+        margin: 0 !important;
+      }
+      .key-dot {
+        display: inline-block;
+        height: 10px;
+        margin-right: .5em;
+        width: 10px;
+      }
+      .legend div{
+        margin-right:20px;
+      }
+      .blue { background-color: blue;}
+      .red { background-color: red;}
+      .black { background-color: black;}
+
+    </style>
+  </body>
+  <script src="read.js"></script>
+
+</html>
