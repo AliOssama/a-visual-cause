@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="d3.js">
+    </script>
+    <title>Mental health report</title>
+  </head>
+  <body>
+    <h1>Mental health data report simulation</h1>
+
+    <p id="center"> This is a small part of the information included in my data report. The link to the actual data website is
+        <a href="https://www.kaggle.com/osmi/mental-health-in-tech-survey#survey.csv"> here </a>
+    </p>
+    <p> This data aimed to find the effect or correlation between mental health problems perception and their effects on the workfield </p>
+
+
+    <p> The first graph includes the gender percentages of the people who took the survey from the tech company. </p>
+   <svg id="svg1">
+    <div class="legend">
+      <div> <p class="color-name"><span class="key-dot blue"></span>Males percentage</p> </div>
+      <div> <p class="color-name"><span class="key-dot red"></span>Females percentage</p> </div>
+      <div> <p class="color-name"><span class="key-dot black"></span>Other</p> </div>
+    </div>
+  </svg>
+
+  <p> This second figure visualizes the residency of the participants. </p>
+
+  <svg id="svg2">
+   <div class="legend">
+     <div> <p class="color-name"><span class="key-dot blue"></span>United States</p> </div>
+     <div> <p class="color-name"><span class="key-dot red"></span>UK</p> </div>
+     <div> <p class="color-name"><span class="key-dot black"></span>Other</p> </div>
+   </div>
+ </svg>
+
+
+<p> This final figure is the percentage answers when the participants were asked: "do you think discussing mental health
+  issues with your employer would have negative consequences?" </p>
+ <svg id="svg3">
+  <div class="legend">
+    <div> <p class="color-name"><span class="key-dot blue"></span>No</p> </div>
+    <div> <p class="color-name"><span class="key-dot red"></span>Maybe</p> </div>
+    <div> <p class="color-name"><span class="key-dot black"></span>Other</p> </div>
+  </div>
+</svg>
+
+    <style>
+      .color-name {
+        margin: 0 !important;
+      }
+      .key-dot {
+        display: inline-block;
+        height: 10px;
+        margin-right: .5em;
+        width: 10px;
+      }
+      .legend div{
+        margin-right:20px;
+      }
+      .blue { background-color: blue;}
+      .red { background-color: red;}
+      .black { background-color: black;}
+
+    </style>
+
+    <p> The interpretations from this sample of data can be described as: the majority of participants are males and residents
+      of the US. They believed that mental health issues can affect their work field in some form. </p>
+  </body>
+  <script src="read.js"></script>
+
+  <style>
+    body{background-color: cyan;}
+
+    h1{font-family: sans-serif; text-align:center;}
+    #center{
+      text-align:center;
+    }
+
+
+
+  </style>
+
+</html>
